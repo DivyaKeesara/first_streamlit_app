@@ -8,7 +8,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("SELECT * FROM fdc_food_ingest limit 10")
 my_data_row = my_cur.fetchone()
 streamlit.header("THE FRUIT LOAD LIST CONTAINS:")
-streamlit.dataframe(my_data_row)
+streamlit.text(my_data_row)
 
 streamlit.title('🥣My parents New Healthy Diner')
 streamlit.header('Dinner Menu')
